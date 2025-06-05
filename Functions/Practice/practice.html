@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function practice set</title>
+</head>
+<body>
+    <script>
+        function name(num){
+            if(num%2==0){
+                return 'num is even';
+            }else{
+                return 'num is odd';
+            }
+        }
+        let check = name(4);
+        console.log(check);
+        console.log(name(1));
+        console.log(name(2));
+
+        console.log(name(3));
+        console.log(name(4));
+        console.log(name(5));
+        console.log(name(6));console.log(name(7));
+
+
+        console.log('return larger number between two numbers');
+        //creaet method return lager of two numbers 
+        function chec(num1,num2){
+            if(num1>num2){
+                console.log(`The larger num is ${num1}`);
+            }else{
+                console.log(`The larger num is ${num2}`);
+
+            }
+        }//use ternary operation karun bagh
+
+        console.log(chec(4,5));
+
+        //create method to convert celcius to fahreheit
+
+        function convert(celcius){
+            let f= ((celcius*9/5)+32)
+            return `the conversion of celsius of '${celcius}' into fahrenheit is '${f}'`;
+        }
+
+        console.log(convert(4));
+
+        console.log('this is practice set in visual studion code');
+
+    </script>
+</body>
+</html>

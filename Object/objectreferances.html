@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>object_referances</title>
+</head>
+<body>
+    <script>
+        let a=5;
+        let b= a;
+        console.log(`a= ${a} and b=${b}`);
+        a=8;
+        console.log(`a= ${a} and b=${b}`);
+
+        let c ={
+            num:10
+         
+        };
+        let d = c;
+        console.log(`c=${c.num} and d=${d.num}`);
+        c.num =11;
+        console.log(`c=${c.num} and d=${d.num}`);
+
+        //== using == we only compare the values of two objects
+        let z ={
+            p:'tushat'
+        }
+
+        let h={
+            p:'tushat'
+        }
+        console.log(z==h);//here == and === only compare object refernaces like z and h not content //try =
+
+    
+    </script>
+    
+</body>
+</html>

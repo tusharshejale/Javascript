@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objectshortcut</title>
+</head>
+<body>
+    <script>
+        let product = {
+            company:'TATA',
+            prize : 600000
+        };
+        let sting  = product.company //we can take any property value in any variable like this 
+        console.log(sting);
+        // same as
+        let{ company } = product; //ithe direct property access kartoy object madhun ani future changes karu shakato
+        //let{prize , company} =product; asa pan access karu shakato
+        let{ prize } =product;
+
+        console.log(company); //using this we get value of related property iwthout using like product.company
+        console.log(prize);
+
+
+        //object short hand method
+        let id=2000;
+        let avigna ={
+            name:'tushar',
+            position:'web-developer',
+            id                         //id:id asa nahi lihayacha tya stahi hi method use kartoy 
+        }
+        console.log(avigna['id']);
+        // avigna.id=4000;
+        console.log(avigna.id);
+    </script>
+    
+</body>
+</html>

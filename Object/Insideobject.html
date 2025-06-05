@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documenss</title>
+</head>
+<body>
+    <script>
+        let avigana={
+            Name : 'Tushar',
+            Employee_id : 1528,
+            position : 'jr.software developer',
+            performace:{
+                task : 24,
+                complete : 21
+            },
+            info: function(){
+                console.log(`performance of ${avigana.Name} is ${avigana.performace.task} `)
+                console.log(`id of enployee is ${this.Employee_id}`)//usig this we access of value of property it means from this object
+            }
+
+
+        };
+        avigana.info();
+    </script>
+</body>
+</html>

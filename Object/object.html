@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+            company :'tata',
+            prize : 456,
+            'item-name': 'tshirt' //variable madhe name basat nahi tya mule [] he use karayacha
+        }
+        console.log(product);
+        console.log(` here is the ${product.prize}`);
+        console.log(product.prize);////access specific item using  dot(.)
+
+        console.log(product.item-name);//value dusarya format madhe print hotey
+        console.log(product['item-name']);//now correct value is printing
+        //if  i want to change specific item
+        //debugger;
+        product.company = 'ambani';
+        console.log(product);
+
+        //there is another way to access the objects 
+        //bracket notation
+        console.log(product['company']);
+        console.log(product['prize']);
+
+        // const person = new Object();
+
+        // name : 'tushar';
+        // std : 10;
+
+        // console.log(person);
+
+        // document.getElementById("demo").innerHTML = person.name
+        // Create an Object
+        const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue"; 
+        console.log(person);
+
+// Diplay Object Content
+        // document.getElementById("demo") =
+        // person.firstName + " is " + person.age + " years old.";
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <!--if alternates--> 
+   <script>
+    //ternary operator
+    let age=17;
+    //let result;
+    // if(age>18){
+    //     result='adult'
+    // }else{
+    //     result='kid'
+    // }/
+    //rather doing this all work using ternary operator
+    let result=age>18?'adult':'kid';
+    console.log(result)
+
+    //guard operator
+    let ages;//ithe jar falsy value dildi tar default value print honar
+    let finalages= ages || 18;
+    console.log(ages);
+    console.log(finalages);
+
+    //default operator 
+    let agess=15;
+    let finalagess=agess ?? 18;
+    console.log(agess);
+    console.log(` finalagess is ${finalagess}`);
+   </script>
+</body>
+</html>

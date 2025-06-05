@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for muli line indentation ctrl+] or for removal ctrl+[
+        let ages=21;
+        console.log(ages);  //it is basically used for to reducce this code reusability using function
+        ages=33;
+        console.log(`your age is ${ages}`);//also we can this in this manner
+        //here we write finction redue code reusabilty
+        let age=21;
+        function printage(){
+            console.log(`your age is ${age}`);
+
+        }
+        printage();
+
+        age=34;
+        printage();
+
+        ages=23;
+        printage();
+
+        //return statement function
+        function rand(){
+            let a = Math.random();
+            let b = a*3;
+            return b;
+        }
+
+        console.log(rand());
+        //return
+        //also u can check validation over here uisnf if and return its output to check that use console
+         
+        function driverdet(){
+            let age=21;
+            if(age===undefined){
+                return 'age is not defined'; //        //also u can check validation over here uisnf if and return its output to check that use console
+
+            }
+            console.log('age is not defined');
+            let status;
+            if(age>18){
+                status='drive';
+            }else{
+                status='use cycle';
+            }
+            return status;//validation nantar he return nahi use kela tari chalta y
+        }
+
+        console.log(driverdet());
+        status=console.log(driverdet());
+
+        function retrivedata(){
+            let  name = "tushar sambhaji shejale";
+            if(typeof name != ""){
+                return "thsi is not a string";
+            }else{
+                return name;
+            }
+            
+        }
+        let data= retrivedata();
+        console.log(data);
+
+        //function with parameter 
+        //who can take value and then give of that parametre 
+        function sum(x,y){
+            let sum=x+y;
+            return sum;
+        }
+        let num=sum(10,10)//function la call kartoy 
+        //console.log(sum(10,20))
+        console.log(`your sum is ${num}`);
+
+        //function with default parameter 
+        function greety(name = 'pyaare'){//here we set default value name = pyaare
+            console.log(`my name is ${name}`);
+        }
+        greety();//for defalut parameter
+       // greety('Tushar');
+       // greety('sanket');
+    </script>
+</body>
+</html>

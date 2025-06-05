@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <!--we aew checkong for boolean values-->
+    <script>
+        console.log(5>9)
+        let y=4;
+        console.log(typeof(4>10))
+        console.log(typeof('true')) //this is not an boolean it is string
+        console.log(typeof(true)) 
+        //relational operator
+        console.log(5>4);
+        console.log(5<6);
+        console.log(5<=6);
+        console.log(5>=5);
+        //equality opeartor
+        let a=5;
+        let b=6;
+        console.log(a==b);//it checks value only
+        console.log(a===b)//=== it checks value and type also
+        //inequality
+        console.log(a!=b);//here it checks value of  a and b is equal or not
+        console.log(a!==b);//it cheks the value and also data type
+        //check for if-else statement
+        console.log('hii check your car');
+        //agar
+        if(12<15){
+            console.log('this is your car');
+        }else if(12<13){ //else if will not run in first if reslut is trueso other will ignored
+            console.log('dfinately your car');
+            //magar
+        }else{
+            console.log('sorry not your car');
+        }
+        
+        if(12<15) console.log('this is your car');
+        else console.log("no") //we also can write this in this way
+
+        let age=Math.random();
+        console.log(age)
+        if(age>=65){
+            console.log("bring someone to drive");
+        }else if(age>18){
+            console.log("you are able to drive ");
+        }else{
+            console.log("use bycycle");
+        }
+    </script>
+</body>
+</html>

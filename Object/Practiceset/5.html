@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>5</title>
+</head>
+<body>
+    <script>
+        //5. Add function isIdentical Product to compare two product objects.
+        let p1 ={
+            product1:'bag',
+            prize:800,
+        };
+        
+        let p2 = {
+            product1:'ba',
+            prize:800,
+        };
+        function isvalidproduct(){
+            if(p1 == p2){ //p1.prize == p2.prize && p1.product1==p2.product1
+                return true;
+            }else{
+                return false;
+            }
+        };
+        
+        console.log(isvalidproduct());
+
+
+        //here start quey wala problem 
+        let product1 ={
+            name:'volvo',
+            prize:900,
+            subproduct:{
+                name:'volvo2',
+                prize:1000
+            },
+            
+            isequal:function(product1,subproduct){ // parent object child object barobar nahi compare karu shakat parameter pass kartoy te wrong ahe 
+                if(product1 == subproduct){
+                    return true;
+
+                }else{
+                    return false;
+                }
+                //console.log(isequal()); using this here it gives correct ans
+                //
+            }
+        
+        };
+        //debugger;                                  
+        product1.isequal();
+     
+
+        //In JavaScript, objects are compared based on their reference in memory, not their content. 
+        // This means that two objects with identical properties and values will not be considered equal if they are stored in different memory locations.
+        //When using comparison operators like == or ===, JavaScript checks if the two variables being compared refer to the same object in memory. 
+        // If they do, the result is true; otherwise, it's false, regardless of the objects' content.    
+        
+        
+
+        
+    </script>
+    
+</body>
+</html>

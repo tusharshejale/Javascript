@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+
+</head>
+<body>
+    <script>
+        //2. Create an Object with two references and log changes to one object by changing the other one.
+
+        let avigna ={
+            name:'tushar',
+            id:28,
+            position:'dev'
+        }
+
+        let company = avigna;
+        company.name='TATA';
+        console.log(company)
+        
+        //Create an obect with two refernaces with means we have to create one object and copy that all values in another object so it make refernces for that object 
+        let Product ={
+            name:'jeans',
+            size: 34,
+            sale:50,
+        }
+        console.log(Product);
+        let copyproduct = Product;
+        copyproduct.name='shirt';
+        console.log(Product);
+    </script>
+    
+</body>
+</html>

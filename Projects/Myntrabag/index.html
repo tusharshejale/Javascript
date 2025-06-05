@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>myntra bag</title>
+</head>
+<link rel="stylesheet" href="bag.css">
+<body>
+    <button id="first" onclick="cartsummary=cartsummary+1; document.querySelector('#cartsummery').innerText=`Your Bag Has   ${cartsummary}  Items`; ">Add to Bag</button>
+    <button id="second" onclick="cartsummary=cartsummary-1; document.querySelector('#cartsummery').innerText=`Your Bag Has   ${cartsummary}  Items`; " >MOVE TO WISHLIST</button>
+    <button id="third" onclick="cartsummary=cartsummary+2; document.querySelector('#cartsummery').innerText=`Your Bag Has   ${cartsummary}  Items`; ">Add 1+1 sale item</button>
+    <h1 id="cartsummery"></h1>
+    <script>
+        let cartsummary=0;
+        document.querySelector('#cartsummery').innerText=`Your Bag Has   ${cartsummary}  Items`; /*ineertext i sbasically used for  to change the inner text of that tag*/
+        /*const pi=2;
+        pi +=4
+        console.log(pi*2)*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>3</title>
+</head>
+<body>
+    <button id="buttonid" class="buttonclass">submit</button>
+    <p id="clickcount">Clicks: 0</p>
+   <script>
+    const button = document.getElementById('buttonid');
+    const countdisplay =document.getElementById('clckcount');
+    let  = 0;
+
+    button.addEventListener('click', function(){
+        count++;
+        countDisplay.textContent = 'Clicks: ' + count;
+    })
+   </script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Click Counter</title>
+</head>
+<body>
+
+<button id="myButton" onclick="getRandomHexColor()">Click Me</button>
+<p id="clickCount">Clicks: 0</p>
+
+<script>
+const button = document.getElementById('myButton');
+const countDisplay = document.getElementById('clickCount');
+let count = 0;
+
+button.addEventListener('click', function() {
+  count++;
+  countDisplay.textContent = 'Clicks: ' + count;
+
+  function getRandomHexColor() {
+     return '#' + Math.floor(Math.random() * 16777215).toString(16);
+   }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--based on current hour determine it morining or what and shows output-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <script>
+        let Hour = new Date();
+        console.log(Hour);
+        let time = Hour.getHours();
+        console.log(time);
+        //let hours = 12;
+        if(time>=1 && time<=12){
+            alert(`Good Morning its ${time} in morning`);
+        }else if(time>=12 && time<= 18){
+            alert(`Good Afternoon its ${time} in Afternoon`);
+
+        }else{
+            alert(`good night its ${time} right now sleep well`)
+        }
+            
+        
+    </script>
+</body>
+</html>

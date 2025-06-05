@@ -1,0 +1,28 @@
+#first{  /*for id use #*/
+    /*background-color: blue;/*bakground color sathi*/
+    color: yellow;/*text clor sathi */
+}
+
+.second{ 
+    background-color: brown;
+    color: white;
+}
+
+.four{
+    background-color: greenyellow;
+    border-radius: 15%;
+    border: none;
+    
+
+}
+
+.five{
+   
+    border-radius: 15%;
+    padding-left: 25px;
+    padding-right:25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid;
+    
+}

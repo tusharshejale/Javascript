@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Localstorage</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('Name','Tushar');
+        //localStorage.setItem('price','10000');//yala comment off kela tari tyachi value print honar karan yachi value local storage la store ahe
+        console.log(localStorage.getItem('price'));
+        //now moving towards the object point
+        product={
+            name:'tushar',
+            price:5000,
+        };
+
+        localStorage.setItem('product',JSON.stringify(product)); //store project object in string format 
+        console.log(localStorage.getItem('product'));
+
+        // now store product in pro object
+        let pro = JSON.parse(localStorage.getItem('product')); //here we store that PRODUCT OBJECT IN PRO and converted into js object
+        console.log(pro);
+
+        localStorage.removeItem('price');//it removes value from object based on key 
+        //localStorage.clear(); //it clear all values from local staorage
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let product ={
+            "name": "tushar",
+            "price": "345",
+            ratings:{
+                rate:4.4,
+                comment:'yes',
+            }
+        }
+        //console.log(product["name"]);
+        //console.log('print');
+        //console.log(product);
+       // let convert = JSON.parse(product);
+        //console.log(`here we convert js object into parse ${convert}`); // here we cant take parse because it is alrady in parse format 
+        let convert2 = JSON.stringify( product);
+        console.log(typeof convert2);
+        console.log(`here we convert object into stringyfy ${convert2}`);
+        console.log(convert2);//here we convert object into stringyfy {"name":"tushar","int":"345","ratings":{"rate":4.4,"comment":"yes"}}
+        //console.log(typeof product)
+        //now convert that stig into parse
+        let convert3 = JSON.parse(convert2);
+        console.log(typeof convert3);
+        console.log(convert3);
+        //in object format
+        const jsonStringWithSpace = JSON.stringify(product, null,2);//convert js object inti json object clear that null , 2 concepts
+        //const jsonStringWithSpace = JSON.parse(convert2);
+        //debugger;
+        console.log(jsonStringWithSpace);
+
+        
+    </script>
+</body>
+</html>
